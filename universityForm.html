@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="icon" href="fav.jpg" />
+    <style>
+        form {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="success.html">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <h1>SOME UNIVERSITY</h1>
+                </td>                
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h3>Student Registration Form</h3>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="sname">Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="sname" name="sname" value="" autocomplete="off" required />
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">DOB: </label>
+                </td>
+                <td>
+                    <input type="date" id="dob" name="dob" value="" autocomplete="off" required />
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="sex">Sex: </label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="sex" required />Male
+                    <input type="radio" id="female" name="sex" required />Female
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email: </label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" value="" autocomplete="off" required />
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address: </label>
+                </td>
+                <td>
+                    <textarea id="address" name="address" cols="21" rows="5" required></textarea>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="college">College:</label>
+                </td>
+                <td>
+                    <select id="college" name="college" required>
+                        <option value="">Select college</option>
+                        <option value="college1">College 1</option>
+                        <option value="college2">College 2</option>
+                        <option value="college3">College 3</option>
+                        <option value="college4">College 4</option>
+                        <option value="college5">College 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="department">Department:</label>
+                </td>
+                <td>
+                    <select id="department" name="department" required>
+                        <option value="">Select department</option>
+                        <option value="department1">department 1</option>
+                        <option value="department2">department 2</option>
+                        <option value="department3">department 3</option>
+                        <option value="department4">department 4</option>
+                        <option value="department5">department 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="courses">Courses:</label>
+                </td>
+                <td>
+                    <select id="courses" name="courses" required>
+                        <option value="">Select courses</option>
+                        <option value="courses1">courses 1</option>
+                        <option value="courses2">courses 2</option>
+                        <option value="courses3">courses 3</option>
+                        <option value="courses4">courses 4</option>
+                        <option value="courses5">courses 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mob">Mobile Number: </label>
+                </td>
+                <td>
+                    <input type="tel" id="mob" name="mob" value="" autocomplete="off" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}" />
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" id="reset" name="reset" value="Reset" />
+                </td>
+                <td>
+                    <input type="submit" id="sbtn" name="sbtn" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+    form{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <form action="success.html">
+        <h1>Student Registration Form</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" required placeholder="Enter full name" autocomplete="off" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fatherName">Father's Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="fatherName" name="fatherName" required autocomplete="off" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="motherName">Mother's Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="motherName" name="motherName" required autocomplete="off" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" autocomplete="off" required placeholder="017xxxxxxxx" pattern="[0][0-9]{10}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required placeholder="sample@example.com" autocomplete="off" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" required />Male
+                    <input type="radio" id="female" name="gender" required />Female
+                    <input type="radio" id="other" name="gender" required />Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="tel" name="dob" required minlength="2" maxlength="2" size="1" />
+                    <label> - </label>
+                    <input type="tel" name="dob" required minlength="2" maxlength="2" size="1" />
+                    <label> - </label>
+                    <input type="tel" name="dob" required minlength="4" maxlength="4" size="2" />
+                    <label><i>(dd-mm-yyyy)</i> </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <textarea cols="21" rows="5" required placeholder="Street:-  House:-  Road:-  "></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bloodgr">Blood Group:</label>
+                </td>
+                <td>
+                    <select id="bloodgr" name="bloodgr" required>
+                        <option value="">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A+">A-</option>
+                        <option value="A+">B+</option>
+                        <option value="A+">B-</option>
+                        <option value="A+">AB+</option>
+                        <option value="A+">AB-</option>
+                        <option value="A+">O+</option>
+                        <option value="A+">O-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="department">Department:</label>
+                </td>
+                <td>
+                    <input type="radio" id="cse" name="department" required />CSE
+                    <input type="radio" id="eee" name="department" required />EEE
+                    <input type="radio" id="bba" name="department" required />BBA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course:</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="c" name="course[]" />C
+                    <input type="checkbox" id="cplus" name="course[]" />C+
+                    <input type="checkbox" id="java" name="course[]" />Java
+                    <input type="checkbox" id="ai" name="course[]" />AI
+                    <input type="checkbox" id="machinelearn" name="course[]" />Machine Learning
+                    <input type="checkbox" id="robotics" name="course[]" />Robotics
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Photo:</label>
+                </td>
+                <td>
+                    <input type="file" id="photo" name="photo" required accept=".pdf" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="sbtn" name="sbtn" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" id="reset" name="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

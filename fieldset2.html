@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="icon" href="fav.jpg" />
+    <style>
+        body {
+            background-color: pink;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Details</h1>
+    <form action="userSuccess.html">
+        <fieldset>
+            <legend>UserDetails</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">First Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" value="" autocomplete="off" required placeholder="Enter first name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Last Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" value="" autocomplete="off" required placeholder="Enter last name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" value="" autocomplete="off" required placeholder="Enter password" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>ContactDetails</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="email">Email Address: </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" value="" autocomplete="off" required placeholder="Enter email address" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mob">Mobile Number: </label>
+                    </td>
+                    <td>
+                        <input type="tel" id="mob" name="mob" value="" autocomplete="off" required placeholder="Enter mobile number" pattern="[0-9]{10}" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <input type="submit" id="sbtn" name="sbtn" value="Submit" />
+    </form>
+</body>
+</html>

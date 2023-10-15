@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Application Form</title>
+</head>
+<body>
+    <form action="https://www.google.com">
+        <h1>Volunteer Application Form</h1>
+        <hr>
+        <label>Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First name" value="" />
+        <input type="text" id="lname" name="lname" placeholder="Last name" value="" /><br><br>
+
+        <label>Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" value="" placeholder="Phone number" required pattern="[0-9]{10}" /><br><br>
+
+        <label>Days of Work</label><br>
+        <input type="checkbox" id="monday" name="monday" value="Monday" />Monday <br>
+        <input type="checkbox" id="tuesday" name="tuesday" value="Tuesday" />Tuesday <br>
+        <input type="checkbox" id="wednesday" name="wednesday" value="Wednesday" />Wednesday <br>
+        <input type="checkbox" id="thursday" name="thursday" value="Thursday" />Thursday <br>
+        <input type="checkbox" id="friday" name="friday" value="Friday" />Friday <br>
+        <input type="checkbox" id="saturday" name="saturday" value="Saturday" />Saturday <br>
+        <input type="checkbox" id="sunday" name="sunday" value="Sunday" />Sunday <br><br>
+
+        <label>Skillset/Area of Interest</label><br>
+        <textarea id="skillset" name="skillset" cols="47" rows="5"></textarea><br><br>
+        
+        <input type="submit" id="sbtn" name="sbtn" value="Submit" />
+    </form>
+</body>
+</html>
